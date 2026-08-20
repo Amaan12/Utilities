@@ -7,7 +7,6 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
-using UnityEngine.Splines;
 using UnityEngine.EventSystems;
 using Cysharp.Threading.Tasks;
 

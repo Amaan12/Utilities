@@ -6,7 +6,9 @@
         "Unity.InputSystem",
         "UnityEngine.UI",
         "UniTask",
-        "VInspector"
+        "VInspector",
+        "Unity.Splines",
+        "ImprovedTimers"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
