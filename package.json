@@ -1,0 +1,56 @@
+{
+  "name": "com.amaan.utilities",
+  "version": "1.0.0",
+  "displayName": "Utilities",
+  "description": "A comprehensive suite of Unity utilities, design patterns, helper methods, time and cursor controllers, and gameplay development tools.",
+  "unity": "2022.3",
+  "keywords": [
+    "utilities",
+    "design patterns",
+    "tools",
+    "unity",
+    "helper",
+    "singleton",
+    "object pool",
+    "state machine",
+    "observer",
+    "time",
+    "cursor"
+  ],
+  "author": {
+    "name": "Amaan",
+    "url": "https://github.com/Amaan12"
+  },
+  "dependencies": {
+    "com.unity.textmeshpro": "3.0.6",
+    "com.unity.inputsystem": "1.7.0",
+    "com.unity.ugui": "2.0.0"
+  },
+  "samples": [
+    {
+      "displayName": "Unreal BP Nodes Sample",
+      "description": "Sample scene and scripts demonstrating Unreal Engine Blueprint style flow nodes (DoOnce, DoN, Gate, MultiGate, FlipFlop, Sequence).",
+      "path": "Samples~/UnrealBPNodes"
+    },
+    {
+      "displayName": "Registry Pattern Sample",
+      "description": "Sample enemy and player scripts showing spatial querying and LINQ selector registry.",
+      "path": "Samples~/Registry"
+    },
+    {
+      "displayName": "Object Pool Sample",
+      "description": "Sample projectile pooling implementation.",
+      "path": "Samples~/ObjectPool"
+    },
+    {
+      "displayName": "Observer Pattern Sample",
+      "description": "Sample observable property and observable list implementation.",
+      "path": "Samples~/Observer"
+    },
+    {
+      "displayName": "IDisposables Sample",
+      "description": "Sample showing C# using-statement disposable pattern for Unity animations, UI lock, and execution timing.",
+      "path": "Samples~/IDisposables"
+    }
+  ]
+}
