@@ -1,14 +1,9 @@
 {
-    "name": "Utilities.Runtime",
-    "rootNamespace": "Utilities",
+    "name": "Utilities.Samples.Spawner",
+    "rootNamespace": "Utilities.Samples.Spawner",
     "references": [
-        "Unity.TextMeshPro",
-        "Unity.InputSystem",
-        "UnityEngine.UI",
-        "UniTask",
-        "VInspector",
-        "Unity.Splines",
-        "Unity.Mathematics"
+        "Utilities.Runtime",
+        "ImprovedTimers"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
