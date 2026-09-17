@@ -36,3 +36,19 @@ https://github.com/Amaan12/Utilities.git
 ## Samples
 
 Import sample scenes and example scripts from the Package Manager under the **Samples** tab.
+
+## Dependencies
+
+### Core Dependencies
+- **UniTask** (Git Package)
+  - Automatically resolved and installed by Unity Package Manager if missing from the project.
+  - Manual git URL (if needed):
+    ```
+    https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask
+    ```
+- **DOTween** (Asset Store)
+  - Install from the Unity Asset Store. Used for smooth time scale transitions and tweening helpers.
+
+### Sample Dependencies
+- **Improved Timers**
+  - Used exclusively in the **Spawner with Timers Sample** (`Samples~/Spawner`). Only needed if that sample is imported.

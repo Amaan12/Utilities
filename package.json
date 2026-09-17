@@ -22,6 +22,7 @@
     "url": "https://github.com/Amaan12"
   },
   "dependencies": {
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.inputsystem": "1.7.0",
     "com.unity.ugui": "2.0.0",

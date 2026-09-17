@@ -6,7 +6,6 @@
         "Unity.InputSystem",
         "UnityEngine.UI",
         "UniTask",
-        "VInspector",
         "Unity.Splines",
         "Unity.Mathematics"
     ],

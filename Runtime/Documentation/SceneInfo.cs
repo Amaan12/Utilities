@@ -1,5 +1,4 @@
 using UnityEngine;
-using VInspector;
 
 namespace Utilities.Documentation
 {
