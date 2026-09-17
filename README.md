@@ -4,8 +4,14 @@ A comprehensive suite of production-ready Unity C# utilities, design patterns, h
 
 ## Installation
 
-### Via Git URL
-Open Unity Package Manager (`Window > Package Manager`), click `+`, select **Add package from git URL...**, and enter:
+### Prerequisites
+Make sure **UniTask** is installed in your project before adding this package. In Package Manager, click `+`, select **Add package from git URL...**, and enter:
+```
+https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask
+```
+
+### Install Utilities
+In Unity Package Manager (`Window > Package Manager`), click `+`, select **Add package from git URL...**, and enter:
 ```
 https://github.com/Amaan12/Utilities.git
 ```
@@ -41,8 +47,7 @@ Import sample scenes and example scripts from the Package Manager under the **Sa
 
 ### Core Dependencies
 - **UniTask** (Git Package)
-  - Automatically resolved and installed by Unity Package Manager if missing from the project.
-  - Manual git URL (if needed):
+  - Must be installed in your project via Package Manager (`Add package from git URL...`):
     ```
     https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask
     ```
