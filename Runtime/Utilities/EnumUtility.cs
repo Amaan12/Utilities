@@ -8,7 +8,6 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using Cysharp.Threading.Tasks;
 
 namespace Utilities
 {
