@@ -1,4 +1,4 @@
-using DG.Tweening;
+using LitMotion;
 using UnityEngine;
 using Utilities;
 
@@ -13,7 +13,9 @@ namespace Utilities.Platformer
         void Start()
         {
             transform.localScale = Vector3.zero;
-            transform.DOScale(Vector3.one, animationDuration).SetEase(Ease.OutBack);
+            LMotion.Create(Vector3.zero, Vector3.one, animationDuration)
+                .WithEase(Ease.OutBack)
+                .Bind(scale => transform.localScale = scale);
 
             if (spawnVFX != null)
             {

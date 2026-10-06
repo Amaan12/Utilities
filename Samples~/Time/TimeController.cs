@@ -1,12 +1,12 @@
 using UnityEngine;
-using DG.Tweening;
+using LitMotion;
 using System;
 
 namespace Utilities.TimeControl
 {
     public static class TimeController
     {
-        static Tween timeTween;
+        static MotionHandle timeTween;
         static readonly float baseFixedDeltaTime = Time.fixedDeltaTime;
         public static bool IsPaused => Time.timeScale == 0f;
         public static event Action<float> OnTimeScaleChanged;
@@ -55,10 +55,10 @@ namespace Utilities.TimeControl
         {
             StopTween();
 
-            timeTween = DOTween
-                .To(() => Time.timeScale, Set, targetScale, duration)
-                .SetEase(ease)
-                .SetUpdate(true);
+            timeTween = LMotion.Create(Time.timeScale, targetScale, duration)
+                .WithEase(ease)
+                .WithScheduler(MotionScheduler.UpdateIgnoreTimeScale)
+                .Bind(Set);
         }
 
         public static void FreezeFrame(float duration, float resumeScale)
@@ -69,22 +69,25 @@ namespace Utilities.TimeControl
 
             Set(0f);
 
-            DOVirtual.DelayedCall(duration, () =>
-            {
-                Physics.simulationMode = SimulationMode.FixedUpdate;
-                Set(resumeScale);
-            }).SetUpdate(true);
+            timeTween = LMotion.Create(0f, 0f, duration)
+                .WithScheduler(MotionScheduler.UpdateIgnoreTimeScale)
+                .WithOnComplete(() =>
+                {
+                    Physics.simulationMode = SimulationMode.FixedUpdate;
+                    Set(resumeScale);
+                })
+                .RunWithoutBinding();
         }
 
         public static bool IsTweening()
         {
-            return timeTween != null && timeTween.IsActive() && timeTween.IsPlaying();
+            return timeTween.IsActive();
         }
 
         public static void StopTween()
         {
-            if (timeTween != null && timeTween.IsActive())
-                timeTween.Kill();
+            if (timeTween.IsActive())
+                timeTween.Cancel();
         }
     }
 }

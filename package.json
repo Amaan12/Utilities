@@ -58,6 +58,11 @@
       "displayName": "IDisposables Sample",
       "description": "Sample showing C# using-statement disposable pattern for Unity animations, UI lock, and execution timing.",
       "path": "Samples~/IDisposables"
+    },
+    {
+      "displayName": "Time Controller Sample",
+      "description": "Sample time controller demonstrating timescale modification and slow motion with LitMotion.",
+      "path": "Samples~/Time"
     }
   ]
 }
